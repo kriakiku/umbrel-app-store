@@ -17,8 +17,8 @@ icon: https://github.com/kriakiku/umbrel-app-store/blob/main/kriakiku-phantombot
 gallery:
   - https://github.com/kriakiku/umbrel-app-store/blob/main/kriakiku-phantombot/assets/screenshot.jpeg?raw=true
 path: /
-defaultUsername: ""
-defaultPassword: ""
+defaultUsername: "umbrel"
+deterministicPassword: true
 submitter: kriakiku
 submission: https://github.com/kriakiku/umbrel-app-store
 releaseNotes: >-
