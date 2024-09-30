@@ -12,4 +12,5 @@ services:
     environment:
       PHANTOMBOT_ENVOVERRIDE: true
       PHANTOMBOT_USEHTTPS: false
-      # PHANTOMBOT_PROXYBYPASSHTTPS: true
+      PHANTOMBOT_PROXYBYPASSHTTPS: true
+      PHANTOMBOT_WSDEBUG: true
