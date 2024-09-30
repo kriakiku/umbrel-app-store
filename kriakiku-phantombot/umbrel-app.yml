@@ -20,5 +20,3 @@ releaseNotes: >-
   Beta
 dependencies: []
 path: ""
-defaultUsername: ""
-deterministicPassword: false
