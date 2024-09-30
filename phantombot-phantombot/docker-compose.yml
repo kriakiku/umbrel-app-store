@@ -1,0 +1,14 @@
+services:
+  app_proxy:
+    environment:
+      APP_HOST: phantombot-phantombot_phantombot_1
+      APP_PORT: 25000
+
+  phantombot:
+    image: ghcr.io/phantombot/phantombot
+    restart: unless-stopped
+    volumes:
+      - PhantomBot_data:/opt/PhantomBot_data
+    #environment:
+      # If you uncomment this variable, your ENV variables will always override botlogin.txt
+      # PHANTOMBOT_ENVOVERRIDE: true

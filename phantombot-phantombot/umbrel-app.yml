@@ -1,0 +1,24 @@
+manifestVersion: 1
+id: phantombot-phantombot
+name: PhantomBot
+tagline: PhantomBot is a Twitch chat bot powered by Java
+icon: https://github.com/kriakiku/umbrel-app-store/blob/main/phantombot/assets/icon.png?raw=true
+category: Social
+version: "0.0.1"
+port: 25000
+description: >-
+  PhantomBot is an actively developed open source interactive Twitch bot with a vibrant community that provides entertainment and moderation for your channel, allowing you to focus on what matters the most to you - your game and your viewers.
+developer: immisterio/Lampac
+website: https://t.me/+TIXtgvGBBOc3ZTUy
+submitter: Lampas
+submission: https://github.com/lampas/umbrel
+repo: https://github.com/immisterio/Lampac
+support: https://github.com/immisterio/Lampac/issues
+gallery:
+  - https://github.com/kriakiku/umbrel-app-store/blob/main/phantombot/assets/screenshot.jpeg?raw=true
+releaseNotes: >-
+  Beta
+dependencies: []
+path: ""
+defaultUsername: ""
+deterministicPassword: false
