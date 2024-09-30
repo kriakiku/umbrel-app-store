@@ -1,7 +1,7 @@
 services:
   app_proxy:
     environment:
-      APP_HOST: phantombot-phantombot_phantombot_1
+      APP_HOST: kriakiku-phantombot_phantombot_1
       APP_PORT: 25000
 
   phantombot:
