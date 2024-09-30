@@ -16,8 +16,8 @@ port: 25000
 icon: https://github.com/kriakiku/umbrel-app-store/blob/main/kriakiku-phantombot/assets/icon.png?raw=true
 gallery:
   - https://github.com/kriakiku/umbrel-app-store/blob/main/kriakiku-phantombot/assets/screenshot.jpeg?raw=true
-  - https://github.com/kriakiku/umbrel-app-store/blob/main/kriakiku-phantombot/assets/screenshot.jpeg?raw=true
-  - https://github.com/kriakiku/umbrel-app-store/blob/main/kriakiku-phantombot/assets/screenshot.jpeg?raw=true
+  - assets/screenshot.jpeg
+  - ./assets/screenshot.jpeg
 path: /
 defaultUsername: ""
 defaultPassword: ""
