@@ -13,8 +13,10 @@ services:
       - umbrel.local:127.0.0.1
     environment:
       PHANTOMBOT_ENVOVERRIDE: true
-      PHANTOMBOT_USEHTTPS: false
-      PHANTOMBOT_PROXYBYPASSHTTPS: false
+      PHANTOMBOT_USEHTTPS: true
+      # PHANTOMBOT_PROXYBYPASSHTTPS: false
       PHANTOMBOT_DEBUGON: false
       PHANTOMBOT_PANELUSER: umbrel
       PHANTOMBOT_PANELPASSWORD: $APP_PASSWORD
+
+usedefaultdnsresolver
