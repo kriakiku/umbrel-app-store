@@ -13,5 +13,3 @@ services:
       PHANTOMBOT_ENVOVERRIDE: true
       PHANTOMBOT_USEHTTPS: false
       PHANTOMBOT_PROXYBYPASSHTTPS: true
-      # If you uncomment this variable, your ENV variables will always override botlogin.txt
-      # PHANTOMBOT_ENVOVERRIDE: true
