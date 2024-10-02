@@ -8,9 +8,9 @@ services:
     image: ghcr.io/phantombot/phantombot
     restart: unless-stopped
     volumes:
+      - ${APP_DATA_DIR}/entrypoint.sh:/umbrel_entrypoint.sh
       - ${APP_DATA_DIR}/data:/opt/PhantomBot_data
       - ${APP_DATA_DIR}/cets:/umbrel_certs
-      - ./entrypoint.sh:/umbrel_entrypoint.sh
     entrypoint: /umbrel_entrypoint.sh
     environment:
       PHANTOMBOT_ENVOVERRIDE: true
