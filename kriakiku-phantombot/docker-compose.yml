@@ -16,8 +16,8 @@ services:
       PHANTOMBOT_ENVOVERRIDE: true
       
       PHANTOMBOT_USEHTTPS: false
-      PHANTOMBOT_HTTPSFILENAME: /umbrel_certs/umbrel.local.crt
-      PHANTOMBOT_HTTPSKEYFILENAME: /umbrel_certs/umbrel.local.key
+      PHANTOMBOT_HTTPSFILENAME: /umbrel_certs/umbrel.local.pem
+      PHANTOMBOT_HTTPSKEYFILENAME: ""
       
       PHANTOMBOT_PANELUSER: umbrel
       PHANTOMBOT_PANELPASSWORD: $APP_PASSWORD
