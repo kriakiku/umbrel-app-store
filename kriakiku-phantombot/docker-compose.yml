@@ -15,7 +15,7 @@ services:
     environment:
       PHANTOMBOT_ENVOVERRIDE: true
       
-      PHANTOMBOT_USEHTTPS: false
+      PHANTOMBOT_USEHTTPS: true
       PHANTOMBOT_HTTPSFILENAME: /umbrel_certs/umbrel.local.pem
       PHANTOMBOT_HTTPSKEYFILENAME: ""
       
