@@ -35,4 +35,9 @@ fi
 
 # Run the PhantomBot entrypoint script
 echo "Running PhantomBot entrypoint script..."
-sh /opt/PhantomBot/docker-entrypoint.sh
+echo "/opt"
+ls /opt
+echo "/opt/PhantomBot"
+ls /opt/PhantomBot
+
+/opt/PhantomBot/docker-entrypoint.sh
