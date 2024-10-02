@@ -10,7 +10,7 @@ services:
     volumes:
       - ${APP_DATA_DIR}/entrypoint.sh:/umbrel_entrypoint.sh
       - ${APP_DATA_DIR}/data:/opt/PhantomBot_data
-      - ${APP_DATA_DIR}/cets:/umbrel_certs
+      - ${APP_DATA_DIR}/certs:/umbrel_certs
     ports:
       - target: 25000
         published: 25000
