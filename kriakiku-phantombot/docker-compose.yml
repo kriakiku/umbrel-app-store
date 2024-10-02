@@ -1,8 +1,8 @@
 services:
-  app_proxy:
-    environment:
-      APP_HOST: kriakiku-phantombot_server_1
-      APP_PORT: 25000
+  # app_proxy:
+  #   environment:
+  #     APP_HOST: kriakiku-phantombot_server_1
+  #     APP_PORT: 25000
 
   server:
     image: ghcr.io/phantombot/phantombot
@@ -11,6 +11,10 @@ services:
       - ${APP_DATA_DIR}/entrypoint.sh:/umbrel_entrypoint.sh
       - ${APP_DATA_DIR}/data:/opt/PhantomBot_data
       - ${APP_DATA_DIR}/cets:/umbrel_certs
+    ports:
+      - target: 25000
+        published: 25000
+        protocol: tcp
     entrypoint: /umbrel_entrypoint.sh
     environment:
       PHANTOMBOT_ENVOVERRIDE: true
