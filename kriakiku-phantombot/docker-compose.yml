@@ -1,38 +1,21 @@
 services:
-  # app_proxy:
-  #   environment:
-  #     APP_HOST: kriakiku-phantombot_server_1
-  #     APP_PORT: 25000
+  app_proxy:
+    environment:
+      APP_HOST: kriakiku-phantombot_server_1
+      APP_PORT: 25000
 
   server:
     image: ghcr.io/phantombot/phantombot
     restart: unless-stopped
     volumes:
       - ${APP_DATA_DIR}/data:/opt/PhantomBot_data
-    extra_hosts:
-      - umbrel.local:127.0.0.1
-    ports:
-      - target: 25000
-        published: 25000
-        protocol: tcp
+      - ${APP_DATA_DIR}/cets:/umbrel_certs
     environment:
       PHANTOMBOT_ENVOVERRIDE: true
-      PHANTOMBOT_USEHTTPS: false
-
-      PHANTOMBOT_DEBUGON: true
-      PHANTOMBOT_DEBUGLOG: true
-      PHANTOMBOT_IRCDEBUG: true
-      PHANTOMBOT_HELIXDEBUG: true
-      PHANTOMBOT_WSDEBUG: true
-      PHANTOMBOT_REACTORDEBUG: true
-      PHANTOMBOT_INTERNALDEBUG: true
-      PHANTOMBOT_WSPINGERDEBUG: true
-      PHANTOMBOT_EVENTSUBDEBUG: true
-      PHANTOMBOT_DNSDEBUG: true
-      PHANTOMBOT_HTTPCLIENTDEBUG: true
-      PHANTOMBOT_PATHVALIDATEDEBUG: true
-      PHANTOMBOT_RHINODEBUGGER: true
-
+      
+      PHANTOMBOT_USEHTTPS: true
+      PHANTOMBOT_HTTPSFILENAME: /umbrel_certs/umbrel.local.crt
+      PHANTOMBOT_HTTPSKEYFILENAME: /umbrel_certs/umbrel.local.key
+      
       PHANTOMBOT_PANELUSER: umbrel
       PHANTOMBOT_PANELPASSWORD: $APP_PASSWORD
-      PHANTOMBOT_USEDEFAULTDNSRESOLVER: true
