@@ -6,8 +6,9 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data:/opt/PhantomBot_data
     ports:
-      - "${APP_PHANTOM_SERVER_PORT}:25000"
+      - "${APP_PHANTOM_SERVER_PORT}:${APP_PHANTOM_SERVER_PORT}"
     environment:
       PHANTOMBOT_USEHTTPS: "true"
       PHANTOMBOT_PANELUSER: umbrel
       PHANTOMBOT_PANELPASSWORD: $APP_PASSWORD
+      PHANTOMBOT_BASEPORT: $APP_PHANTOM_SERVER_PORT
