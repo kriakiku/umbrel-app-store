@@ -11,7 +11,7 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data:/opt/PhantomBot_data
     environment:
-      PHANTOMBOT_ENVOVERRIDE: "true"
-      PHANTOMBOT_USEHTTPS: "true"
+      PHANTOMBOT_ENVOVERRIDE: true
+      PHANTOMBOT_USEHTTPS: true
       PHANTOMBOT_PANELUSER: umbrel
       PHANTOMBOT_PANELPASSWORD: $APP_PASSWORD
