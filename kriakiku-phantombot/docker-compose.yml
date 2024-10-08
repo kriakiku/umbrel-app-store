@@ -8,7 +8,6 @@ services:
     ports:
       - "${APP_PHANTOM_SERVER_PORT}:25000"
     environment:
-      PHANTOMBOT_ENVOVERRIDE: true
       PHANTOMBOT_USEHTTPS: true
       PHANTOMBOT_PANELUSER: umbrel
       PHANTOMBOT_PANELPASSWORD: $APP_PASSWORD
