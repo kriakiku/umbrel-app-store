@@ -1,25 +1,45 @@
-anifestVersion: 1.1
+manifestVersion: 1.1
 id: kriakiku-phantombot
 category: social
 name: PhantomBot
-version: "0.0.1"
+version: "3.14.1.0"
 tagline: PhantomBot is a Twitch chat bot powered by Java
+icon: "https://svgshare.com/i/1BJ0.svg"
+gallery: 
+  - https://private-user-images.githubusercontent.com/10038023/374721867-e139f45c-5b8f-447f-b971-6bdef792bbb4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjg0MjE2MzYsIm5iZiI6MTcyODQyMTMzNiwicGF0aCI6Ii8xMDAzODAyMy8zNzQ3MjE4NjctZTEzOWY0NWMtNWI4Zi00NDdmLWI5NzEtNmJkZWY3OTJiYmI0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDA4VDIxMDIxNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWRjMmQxZDM4ZjNhNTRlZDM5MmMwODljOTljNGZlN2MwY2RlNTcxYmQyZmIzMzVlNGE4MDY5ZmQwZGQyODg3MjgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.BDNFZ7kPJ8Ck6yWfmzC7ddT7XubB58tsDFXdZyC_gc4
+  - https://private-user-images.githubusercontent.com/10038023/374707368-d6fa6904-2e20-4e6a-9a7d-c086ac4d910b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjg0MjE2MzYsIm5iZiI6MTcyODQyMTMzNiwicGF0aCI6Ii8xMDAzODAyMy8zNzQ3MDczNjgtZDZmYTY5MDQtMmUyMC00ZTZhLTlhN2QtYzA4NmFjNGQ5MTBiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDA4VDIxMDIxNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTA4OGViOTUzZDQ4YTEwMGUzZDgwNWQ1NjJlNjM4Y2E2YTllMDcyNmI5NmQ3NTE2ZTY4OGUxY2FhNmEyNmZiYWYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.yz_PB13mODNvibZVMr5bic2FLoSfWpiWszpVk6h2paA
+  - https://private-user-images.githubusercontent.com/10038023/374707420-676bdf70-e8e9-45a3-b599-ea2f4b79d26d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjg0MjE2MzYsIm5iZiI6MTcyODQyMTMzNiwicGF0aCI6Ii8xMDAzODAyMy8zNzQ3MDc0MjAtNjc2YmRmNzAtZThlOS00NWEzLWI1OTktZWEyZjRiNzlkMjZkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDA4VDIxMDIxNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU2NmFlNDhiMmI3YjIzMTE3YTlkNTJiYjY1ZjU3N2NiYTgxODAxZWZiMmVlZjk0YjczOTA2NGY1NWQ3YmNkNGYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Yv-zRT6oeIghrzMRrBippIaaCwsJGWLJManl8h55EFM
+  - https://private-user-images.githubusercontent.com/10038023/374707481-81410ed0-7e7b-4256-a676-b8f039d27d6a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjg0MjE2MzYsIm5iZiI6MTcyODQyMTMzNiwicGF0aCI6Ii8xMDAzODAyMy8zNzQ3MDc0ODEtODE0MTBlZDAtN2U3Yi00MjU2LWE2NzYtYjhmMDM5ZDI3ZDZhLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDA4VDIxMDIxNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE4ZmIzMGQ0Nzc0OGI4ZTlmMzgzYTkzZTA3ZDI1NGFmODIzNmRiOWRhYTIwMGQwNmZhYjRhMWY2YjMxZjNlYzQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.WiH47WyvMMuAg-LEmfdz9q5FZ910rlQuQuKCB_0Oez8
+  - https://private-user-images.githubusercontent.com/10038023/374707792-fc6f3df9-cc3f-4f6c-931e-b4d8f811cbdc.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjg0MjE2MzYsIm5iZiI6MTcyODQyMTMzNiwicGF0aCI6Ii8xMDAzODAyMy8zNzQ3MDc3OTItZmM2ZjNkZjktY2MzZi00ZjZjLTkzMWUtYjRkOGY4MTFjYmRjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDA4VDIxMDIxNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWZkZjVmOWI1NjA0ODFiZWYxZTNmMmNiNDY1ZWNkYjEzMzlhYTU2MzQ1YjI0YjE5MGZjZDFjZTgxNjI1MTEwYjYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.yEsbDaMQ9Im9m_GCLs4sBCLlJKnN852g-J5kESZlUXg
 description: >-
   PhantomBot is an actively developed open source interactive Twitch bot with a vibrant community that provides entertainment and moderation for your channel,
   allowing you to focus on what matters the most to you - your game and your viewers.
-developer: PhantomBot
+
+
+  🛠️ Set-Up Instructions
+
+
+   Required! If you don't perform the initial setup, you will encounter an error when connecting to the control panel!
+
+
+  1. **Connect Your Twitch Account**  
+     Using the instructions on the page https://umbrel.local:25000/oauth/, connect your Twitch account.  
+     Ensure that the "OAuth Redirect URLs" field contains the value `https://umbrel.local:25000/oauth/` (with https).
+
+  2. **Fill in the Configuration Fields**  
+     Complete the *channel* and *owner* fields on the configuration page https://umbrel.local:25000/setup/.
+
+  3. **Log In**  
+     Done! You can log in to the control panel at https://umbrel.local:25000/panel/login using the default credentials.
+releaseNotes: ""
+developer: phantombot
 website: https://phantombot.dev
 dependencies: []
-repo: https://github.com/PhantomBot/PhantomBot
+repo: https://github.com/phantombot/PhantomBot
 support: https://discord.com/invite/YKvMd78
 port: 25000
-icon: https://github.com/kriakiku/umbrel-app-store/blob/main/kriakiku-phantombot/assets/icon.png?raw=true
-gallery:
-  - https://github.com/kriakiku/umbrel-app-store/blob/main/kriakiku-phantombot/assets/screenshot.jpeg?raw=true
-path: /
+path: ""
 defaultUsername: "umbrel"
 deterministicPassword: true
 submitter: kriakiku
-submission: https://github.com/kriakiku/umbrel-app-store
-releaseNotes: >-
-  Beta
+submission: https://github.com/getumbrel/umbrel-apps/pull/1608

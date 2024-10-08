@@ -1,36 +1,16 @@
 services:
-  # app_proxy:
-  #   environment:
-  #     APP_HOST: kriakiku-phantombot_server_1
-  #     APP_PORT: 25000
+  app_proxy:
+    environment:
+      APP_HOST: kriakiku-phantombot_server_1
+      APP_PORT: 25000
 
   server:
-    image: ghcr.io/phantombot/phantombot
-    restart: unless-stopped
+    image: ghcr.io/phantombot/phantombot:3.14.1.0@sha256:dbec9818e40f967ac5aee3abcac5a1857481cbbe6b35400f9a2fa8f1dc638df0
+    user: 1000:1000
+    restart: on-failure
     volumes:
-      - ${APP_DATA_DIR}/entrypoint.sh:/umbrel_entrypoint.sh
       - ${APP_DATA_DIR}/data:/opt/PhantomBot_data
-      - ${APP_DATA_DIR}/certs:/umbrel_certs
-    ports:
-        # The port the bot webserver listens on in the container
-        # This should not be changed, and the baseport setting in botlogin.txt should not be changed
-        # It is not necessary with Docker since this is internal to each individual container instance
-      - target: 25000
-        #
-        # The port the bot webserver will be published to on the host
-        # This is the number that should be changed, if not using Traefik, when hosting multiple bot instances on the same server
-        # If using Traefik, this should not be changed
-        published: 25000
-        #
-        # TCP protocol for HTTP. Do not change
-        protocol: tcp
-    entrypoint: /umbrel_entrypoint.sh
     environment:
-      PHANTOMBOT_ENVOVERRIDE: true
-      
-      PHANTOMBOT_USEHTTPS: true
-      # PHANTOMBOT_HTTPSFILENAME: /umbrel_certs/umbrel.local.pem
-      # PHANTOMBOT_HTTPSKEYFILENAME: ""
-      
+      PHANTOMBOT_USEHTTPS: "true"
       PHANTOMBOT_PANELUSER: umbrel
       PHANTOMBOT_PANELPASSWORD: $APP_PASSWORD
