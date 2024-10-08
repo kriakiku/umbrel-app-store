@@ -10,6 +10,8 @@ services:
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data:/opt/PhantomBot_data
+    ports:
+      - "${APP_PHANTOM_SERVER_PORT}:25000"
     environment:
       PHANTOMBOT_ENVOVERRIDE: true
       PHANTOMBOT_USEHTTPS: true
