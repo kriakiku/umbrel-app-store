@@ -1,6 +1,6 @@
 services:
   server:
-    image: ghcr.io/phantombot/phantombot:3.14.1.0@sha256:dbec9818e40f967ac5aee3abcac5a1857481cbbe6b35400f9a2fa8f1dc638df0
+    image: ghcr.io/phantombot/phantombot:3.14.2.0@sha256:aff36a350eb3cb16799fa8ac4b668a596cd785c62b3bad4139c1b68f0ebbe7b3
     user: 0:900
     restart: on-failure
     volumes:
